@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #734f96;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main.container {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        .img-card img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #734f96;
+            /* Dark purple footer background */
+            color: #fff;
+            /* White text color */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive styles */
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section>
+            <h2 class="text-center">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>Welcome to my portfolio! I'm Pranavi Sanda, passionate about web development and love creating
+                        beautiful, functional websites. Currently, I am a 3rd-year highly motivated computer science
+                        student seeking good internships.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="text-center">Academics</h2>
+                <button id="showTableBtn" class="btn btn-primary">Show Table</button>
+                <table id="jsonTable" class="table" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Certificate</th>
+                            <th>Institute</th>
+                            <th>Board/University</th>
+                            <th>Year</th>
+                            <th>Percentage/GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            
+        </section>
+        <hr>
+        <section>
+            <h2 class="text-center">My Projects</h2>
+            <div class="cards">
+                <div class="container">
+                    <div class="row">
+                        <!-- Your project cards here -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <!-- Card content -->
+                                <div class="img-card">
+                                    <img src="https://cdn6.aptoide.com/imgs/5/a/7/5a790428a5603f85508969efc4947ed0_icon.png" alt="MoneyTracker">
+                                </div>
+                                <div class="text">
+                                    
+                                    <h2>MoneyTracker</h2>
+                                    <p>A financial tracker, also known as an expense tracker, is a tool for tracking income and spending. It can be done by recording receipts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <!-- Card content -->
+                                <div class="img-card">
+                                    <img src="https://media.istockphoto.com/id/1497396873/photo/ready-for-starting-my-beach-holiday.webp?b=1&s=170667a&w=0&k=20&c=2SNFbIDAdU6Lrp_-REz1ZX3jKE_mbkYT6LUOyhI8_NU=" alt="GoTrip">
+                                </div>
+                                <div class="text">
+                                    
+                                    <h2>GoTrip</h2>
+                                    <p>MakeMyTrip is an Indian online travel company that provides a range of travel services including flight bookings, hotel reservations, holiday packages, and bus and train tickets.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <!-- Card content -->
+                                <div class="img-card">
+                                    <img src="https://a.storyblok.com/f/99519/1920x1080/816a633515/pomodoro-1.jpg" alt="Pomofocus">
+                                </div>
+                                <div class="text">
+                                    
+                                    <h2>PomoFocus</h2>
+                                    <p>Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <!-- Card content -->
+                                <div class="img-card">
+                                    <img src="https://play-lh.googleusercontent.com/QbSSiRcodmWx6HlezOtNu3vmZeuFqkQZQQO5Y2-Zg_jBRm-mXjhlXX5yFj8iphfqzQ" alt="Wechat" style="height: 50%; width: 100%;">
+                                </div>
+                                <div class="text">
+                                    
+                                    <h2>WeChat</h2>
+                                    <p>Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <!-- Card content -->
+                                <div class="img-card">
+                                    <img src="https://lh3.googleusercontent.com/Z7l0JfqTeeK41_DGK7cRnkmagm_brdcAWCEmpXuGj_rUmOVr9vyuuoIaJtXngW1nZVg0bWjYlmGQPQsE11Og_nMH=w640-h400-e365-rj-sc0x00ffffff" alt="TodoList">
+                                </div>
+                                <div class="text">
+                                    
+                                    <h2>TodoList</h2>
+                                    <p>Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <!-- Card content -->
+                                <div class="img-card">
+                                    <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2020/02/000-Online-Code-Editors.png" alt="Editor">
+                                </div>
+                                <div class="text">
+                                    
+                                    <h2>Online code Editor</h2>
+                                    <p>Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div style="text-align: center;">
+                <h2>Contact Me</h2>
+                <!-- Contact form -->
+                <div>
+                    <p><i class="fa-solid fa-location-dot"></i> Narayanguda, HYD</p>
+                    <p><i class="fa-solid fa-phone"></i> Phone: +91 123-456</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: Pranavi@mail.com</p>
+                </div><br>
+                <p>Let's get in touch. Send me a message:</p>
+                <form action="#" target="_blank">
+                    <input type="text" placeholder="Name" required name="Name"><br>
+                    <input type="text" placeholder="Email" required name="Email"><br>
+                    <input type="text" placeholder="Subject" required name="Subject"><br>
+                    <input type="text" placeholder="Message" required name="Message"><br>
+                    <button type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+    // Sample JSON data
+    var jsonData = [
+        {"id": 1, "certificate": "Certificate 1", "institute": "Institute 1", "board": "Board 1", "year": "2022", "percentage": "90%"},
+        {"id": 2, "certificate": "Certificate 2", "institute": "Institute 2", "board": "Board 2", "year": "2023", "percentage": "85%"},
+        {"id": 3, "certificate": "Certificate 3", "institute": "Institute 3", "board": "Board 3", "year": "2024", "percentage": "95%"}
+    ];
+    
+    // Function to generate table rows from JSON data
+    function generateTableRows(data) {
+        var html = '';
+        $.each(data, function(index, item){
+            html += '<tr>';
+            html += '<td>' + item.id + '</td>';
+            html += '<td>' + item.certificate + '</td>';
+            html += '<td>' + item.institute + '</td>';
+            html += '<td>' + item.board + '</td>';
+            html += '<td>' + item.year + '</td>';
+            html += '<td>' + item.percentage + '</td>';
+            html += '</tr>';
+        });
+        return html;
+    }
+    
+    // Function to show table
+    function showTable() {
+        var tableHtml = generateTableRows(jsonData);
+        $('#jsonTable tbody').html(tableHtml);
+        $('#jsonTable').show(); // Show the table
+    }
+
+    // Button click event to show table
+    $('#showTableBtn').click(function(){
+        showTable();
+    });
+});
+
+    </script>
+
+</body>
+
+</html>
